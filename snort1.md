@@ -53,7 +53,7 @@ Esta técnica compara las actividades detectadas con la configuración del siste
 
 - Los IPS pueden identificar y bloquear las amenazas con menos asistencia del usuario en el momento de la detección.
 
-> Hablemos ahora de Snort.Aquí está el resto de la descripción oficial del snort;«Snort también puede desplegarse en línea para detener estos paquetes.Snort tiene tres usos principales:Como un rastreador de paquetes como tcpdump, como un registrador de paquetes - que es útil para la depuración del tráfico de red, o puede ser utilizado como un sistema de prevención de intrusiones en la red en toda regla. Snort puede descargarse y configurarse tanto para uso personal como empresarial».
+> Hablemos ahora de Snort.Aquí está el resto de la descripción oficial del snort;«Snort también puede desplegarse en línea para detener estos paquetes.Snort tiene tres usos principales:Como un rastreador de paquetes como tcpdump, como un registrador de paquetes - que es útil para la depuración del tráfico de red, o puede ser utilizado como un sistema de prevención de intrusiones en la red basado en regla(full-blown). Snort puede descargarse y configurarse tanto para uso personal como empresarial».
 
 SNORT es un sistema de prevención y detección de intrusiones en la red (NIDS/NIPS) de código abierto basado en reglas.Fue desarrollado y sigue siendo mantenido por Martin Roesch, colaboradores de código abierto y el equipo Cisco Talos. 
 
