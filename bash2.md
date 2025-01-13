@@ -1,7 +1,7 @@
 # Argumentos, Variables y Arrays
 
 ## Argumentos
-La ventaja de los scripts bash es que siempre podemos pasar hasta 9 argumentos ($0-$9) al script sin asignarlos a variables ni establecer los correspondientes requisitos para éstas. 9 argumentos porque el primer argumento $0 está reservado para el script. Como podemos ver aquí, necesitamos el signo de dólar ($) antes del nombre de la variable para usarla en la posición especificada. La asignación se vería así en comparación:
+La ventaja de los scripts bash es que siempre podemos pasar hasta 9 argumentos ($0-$9) al script sin asignarlos a variables ni establecer los correspondientes requisitos para éstas. 9 argumentos porque el primer argumento '$0' está reservado para el script. Como podemos ver aquí, necesitamos el signo de dólar ($) antes del nombre de la variable para usarla en la posición especificada. La asignación se vería así en comparación:
 ```console
 TheNob@htb[/htb]$ ./script.sh ARG1 ARG2 ARG3 ... ARG9
        ASSIGNMENTS:       $0      $1   $2   $3 ...   $9
