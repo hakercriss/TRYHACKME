@@ -67,7 +67,7 @@ TheNob@htb[/htb]$ ./VarLength.sh
 ```
 Si observamos nuestro script CIDR.sh, veremos que hemos utilizado varias veces los operadores de incremento y decremento. Esto asegura que el bucle while, del que hablaremos más adelante, se ejecuta y hace ping a los hosts mientras la variable «stat» tiene un valor de 1. Si el comando ping termina con el código 0 (éxito), obtenemos un mensaje de que el host está levantado y la variable «stat», así como las variables «hosts_up» y «hosts_total» se modifican.
 
-CIDR.sh
+### CIDR.sh
 ```console
 <SNIP>
 	echo -e "\nPinging host(s):"
