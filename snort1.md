@@ -30,3 +30,49 @@ El sistema se entrena para conocer lo «normal» para detectar lo «anormal». E
 - Sistema de prevención de intrusiones basado en host (HIPS) - HIPS protege activamente el flujo de tráfico desde un único dispositivo terminal. El objetivo es investigar el tráfico en un dispositivo concreto. Si se identifica una firma, se interrumpe la conexión.
 
 El mecanismo de funcionamiento de HIPS es similar al de HIDS. La diferencia entre ellos es que mientras HIDS crea alertas de amenazas, HIPS detiene las amenazas terminando la conexión.
+
+
+## Técnicas de detección/prevención
+
+Existen tres técnicas principales de detección y prevención utilizadas en las soluciones IDS e IPS;
+
+#### Basado en firmas
+Esta técnica se basa en reglas que identifican los patrones específicos del comportamiento malicioso conocido.Este modelo ayuda a detectar amenazas conocidas. 
+
+#### Basada en el comportamiento
+Esta técnica identifica nuevas amenazas con nuevos patrones que traspasan las firmas.El modelo compara los comportamientos conocidos/normales con los desconocidos/anormales.Este modelo ayuda a detectar amenazas previamente desconocidas o nuevas.
+
+#### Basada en políticas 
+Esta técnica compara las actividades detectadas con la configuración del sistema y las políticas de seguridad.Este modelo ayuda a detectar violaciones de las políticas.
+
+## Resumen
+
+¡Uf! Ha sido un viaje largo y con mucha información.Resumamos las funciones generales de los IDS y los IPS en pocas palabras.
+
+- Los IDS pueden identificar las amenazas, pero necesitan la ayuda del usuario para detenerlas.
+
+- Los IPS pueden identificar y bloquear las amenazas con menos asistencia del usuario en el momento de la detección.
+
+> Hablemos ahora de Snort.Aquí está el resto de la descripción oficial del snort;«Snort también puede desplegarse en línea para detener estos paquetes.Snort tiene tres usos principales:Como un rastreador de paquetes como tcpdump, como un registrador de paquetes - que es útil para la depuración del tráfico de red, o puede ser utilizado como un sistema de prevención de intrusiones en la red en toda regla. Snort puede descargarse y configurarse tanto para uso personal como empresarial».
+
+SNORT es un sistema de prevención y detección de intrusiones en la red (NIDS/NIPS) de código abierto basado en reglas.Fue desarrollado y sigue siendo mantenido por Martin Roesch, colaboradores de código abierto y el equipo Cisco Talos. 
+
+Capacidades de Snort;
+
+- Análisis de tráfico en tiempo real
+- Detección de ataques y sondas
+- Registro de paquetes
+- Análisis de protocolos
+- Alertas en tiempo real
+- Módulos y plugins
+- Preprocesadores
+- Soporte multiplataforma(Linux y Windows)
+
+Snort tiene tres modelos de uso principales;
+
+- Modo Sniffer - Lee paquetes IP y los muestra en la aplicación de consola.
+- Modo Packet Logger - Registra todos los paquetes IP (entrantes y salientes) que visitan la red.
+- Modos NIDS (Sistema de Detección de Intrusos en la Red) y NIPS (Sistema de Prevención de Intrusos en la Red) - Registra/elimina los paquetes que se consideran maliciosos de acuerdo con las reglas definidas por el usuario.
+
+
+
