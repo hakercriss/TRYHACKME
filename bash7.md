@@ -1,4 +1,4 @@
-# Control de caudal - Ramas
+# Control de flujo - Ramas
 
 Como ya hemos visto, las ramas en el control de flujo incluyen las sentencias if-else y case. Ya hemos discutido las sentencias if-else en detalle y sabemos cómo funcionan. Ahora veremos más de cerca las sentencias case.
 
