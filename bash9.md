@@ -1,10 +1,12 @@
-# Debugging
+# Depuración
 
-Bash offers us an excellent opportunity to find, track and fix bugs in our code. The term debugging can have many different meanings. However, Bash debugging is the process of removing errors (bugs) from our code. Debugging can be done in many different ways. For example, we can use our debugging code to check for typos, or we can use it for code analysis to track them down and determine why specific errors occur.
+Bash nos ofrece una excelente oportunidad para encontrar, rastrear y corregir errores en nuestro código. El término depuración puede tener muchos significados diferentes. Sin embargo, la depuración de Bash es el proceso de eliminar errores (bugs) de nuestro código. La depuración se puede realizar de muchas maneras diferentes. Por ejemplo, podemos utilizar nuestro código de depuración para comprobar si hay errores tipográficos, o podemos utilizarlo para el análisis de código para rastrearlos y determinar por qué se producen errores específicos.
 
-This process is also used to find vulnerabilities in programs. For example, we can try to cause errors by using different types of input and trace their handling on the CPU through the assembler, which can provide a way to manipulate the handling of these errors to insert our own code and force the system to execute it. This topic will be covered and discussed in detail in other modules. Bash allows us to debug our code using the “-x” (xtrace) and “-v” options. Now let's see an example with our CIDR.sh script.
 
-### CIDR.sh - Debugging
+Este proceso también se utiliza para encontrar vulnerabilidades en los programas. Por ejemplo, podemos intentar provocar errores utilizando diferentes tipos de entrada y rastrear su manejo en la CPU a través del ensamblador, lo que puede proporcionar una forma de manipular el manejo de estos errores para insertar nuestro propio código y forzar al sistema a ejecutarlo. Este tema será cubierto y discutido en detalle en otros módulos. Bash nos permite depurar nuestro código utilizando las opciones «-x» (xtrace) y «-v». Ahora veamos un ejemplo con nuestro script CIDR.sh.
+
+
+### CIDR.sh - Depuración
 ```console
 TheNob@htb[/htb]$ bash -x CIDR.sh
 
@@ -19,9 +21,9 @@ Usage:
 + exit 1
 ```
 
-Here Bash shows us precisely which function or command was executed with which values. This is indicated by the plus sign (+) at the beginning of the line. If we want to see all the code of a particular function, we can set the “-v” option which shows the output in more detail.
+Aquí Bash nos muestra con precisión qué función o comando se ejecutó con qué valores. Esto se indica con el signo más (+) al principio de la línea. Si queremos ver todo el código de una función en particular, podemos establecer la opción «-v» que muestra la salida con más detalle.
 
-### CIDR.sh - Detailed debugging
+### CIDR.sh - Depuración detallada
 ```console
 TheNob@htb[/htb]$ bash -x -v CIDR.sh
 
@@ -47,4 +49,4 @@ Usage:
 	CIDR.sh <domain>
 + exit 1
 ```
-Compared to normal debugging, we see the entire section of code that has been processed so far and then the individual steps that have been taken.
+En comparación con la depuración normal, vemos toda la sección de código que se ha procesado hasta el momento y, a continuación, los pasos individuales que se han dado.
